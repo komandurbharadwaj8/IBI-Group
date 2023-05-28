@@ -13,7 +13,7 @@ pipeline {
     
     stage('Deploy to Local Directory') {
       steps {
-        sh 'docker run -d -p 8080:8080 -v ${PWD}/webapps:/home/user/Images my-tomcat-image'
+        sh 'docker run -d -p 8282:8282 -v ${PWD}/webapps:/home/user/Images my-tomcat-image'
       }
     }
   }
